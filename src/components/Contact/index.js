@@ -48,8 +48,7 @@ const Contact = () => {
                     />
                 </h1>
                 <p>" Hey there!😁 I'm a Curious Soul with a passion for Creativity and Problem-solving. By day, I'm a Tech Enthusiast, Coding Wizard, and Aspiring Innovator, always Eager to Embrace the latest technologies. An eternal learner, I believe in the Power of Growth and the Beauty of continuous Self-discovery. </p>
-                // <p>Join me on this Adventure... 😇, and let's Create a Story filled with Meaningful Experiences and Shared Wonders."
-                </p>
+                <p> "Join me on this Adventure... 😇, and let's Create a Story filled with Meaningful Experiences and Shared Wonders."</p>
 
                 <div className='contact-form' >
                     <form ref = {refForm} onSubmit={sendEmail}>

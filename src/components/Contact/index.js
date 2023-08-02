@@ -51,8 +51,12 @@ const Contact = () => {
                         <br>
                         "Join me on this Adventure... 😇, and let's Create a Story filled with Meaningful Experiences and Shared Wonders."
                         <br>
+                        <br>
+                        <h2>  .
+                        
+                        </h2>
                 </p>
-                        <h1></h1>
+                        <h1>   </h1>
                 <div className='contact-form' >
                     <form ref = {refForm} onSubmit={sendEmail}>
                         <ul>

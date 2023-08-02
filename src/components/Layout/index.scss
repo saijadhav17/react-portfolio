@@ -57,7 +57,7 @@
             left: 10px;
             
             &::before{
-                content: '<h1>';
+                // content: '<h1>';
                 color: #ffd700;
                 font-family: 'La Belle Aurore';
                 font-size: 18px;
@@ -68,7 +68,7 @@
                 line-height: 18px;
             }
             &::after{
-                content: '<h1/>';
+                // content: '<h1/>';
                 color: #ffd700;
                 font-family: 'La Belle Aurore';
                 font-size: 18px;

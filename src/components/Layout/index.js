@@ -8,8 +8,8 @@ const Layout = () => {
         <div className='App'>
             <Sidebar/>
             <div className='page'>
-                <span className='tag top-tags'> &lt;body&gt;</span>
-                <Outlet/>
+                {/* <span className='tag top-tags'> &lt;body&gt;</span> */}
+                {/* <Outlet/> */}
                 {/* <span className='tags bottom-tags'>
                     &lt;/body&gt;
                     <br/>

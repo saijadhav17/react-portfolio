@@ -1,0 +1,89 @@
+.stage-cube-cont{
+    width:50% ;
+    height: 100%;
+    top: 0;
+    padding-top: 18%;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+
+.cubespinner{
+    animation: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0px;
+    margin-left: calc(50% - 100px);
+
+    div{
+        position: absolute ;
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgb(1, 0, 0);
+        background:rgba(190, 163, 202, 0.885) ;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 30px 0px rgb(12, 12, 12);
+        font-size: 100px;
+        display: flex;
+
+    }
+    .face1{
+        transform: translateZ(100px);
+    }
+    .face2{
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    .face3{
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    }
+    .face4{
+        transform: rotateY(180deg) rotateZ(90deg)  translateZ(100px);
+    }
+    .face5{
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    }
+    .face6{
+        transform: rotateX(-90deg)  translateZ(100px);
+    }
+}
+
+@keyframes spincube {
+    from,
+    to{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16%{
+        transform: rotateY(-90deg);
+    }
+    33%{
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50%{
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66%{
+        transform: rotateY(270deg) rotateZ(90deg);
+    }
+    83%{
+        transform: rotateX(90deg);
+    }
+}
+.your-image {
+    position: absolute;
+    background: #f9f9f900;
+    bottom: 0px; /* Adjust the value as per your preference */
+    right: 15px; /* Adjust the value as per your preference */
+    width: 110px; /* Adjust the width of the image as per your preference */
+    height: 210px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgb(244, 228, 246);
+    transition: transform 0.3s ease-in-out; 
+    /* Add any additional styles you want for the image */
+  }
+  .your-image:hover {
+    transform: scale(1.1); /* Adjust the scale value to control the zoom effect on hover */
+  }
